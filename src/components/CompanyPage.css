@@ -1,0 +1,184 @@
+.company-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #AAC4D6, #ffffff);
+  padding: 2rem 0;
+}
+
+.company-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.company-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #0C0C8E;
+  font-family: "Oswald", sans-serif;
+}
+
+.company-section {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.company-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.company-description {
+  font-size: 1.225rem;
+  color: #000;
+  flex: 1;
+  font-family: "Lato", sans-serif;
+  text-align: justify;
+  line-height: 1.75rem;
+}
+
+.company-logo {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 0.5rem;
+  object-fit: contain;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  border-radius: 0.75rem;
+  padding: 2rem;
+  color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-quality {
+  background: linear-gradient(to bottom right, #21478B, #285FD5);
+}
+
+.card-vision {
+  background: linear-gradient(to bottom right, #AA4B92, #5E6089, #A85D9A);
+}
+
+.card-mission {
+  background: linear-gradient(to bottom right, #3E9FD7, #235297);
+}
+
+.card-objectives {
+  background: linear-gradient(to bottom right, #EB8D23, #E6CE18);
+}
+
+.card-values {
+  background: linear-gradient(to bottom right, #0C8E34, #70A927);
+}
+
+.card-clients {
+  background: linear-gradient(to bottom right, #1E479F, #0C0C8E, #5E6089);
+  margin-top: 2rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-icon-box {
+  width: 4rem;
+  height: 4rem;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(4px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+}
+
+.card-text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  white-space: pre-line;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  text-align: justify;
+}
+
+.clients-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+@media (max-width: 640px) {
+
+  .company-title {
+      font-size: 2.2rem;
+  }
+
+  .company-section {
+      padding: 1.5rem;
+  }
+
+  .card {
+      padding: 1.5rem;
+  }
+
+  .card-title {
+      font-size: 1.6rem;
+  }
+
+  .card-text,
+  .company-description {
+      font-size: 1rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+
+  .company-flex {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .company-flex {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
