@@ -82,7 +82,7 @@ export default function Chatbot() {
       if (parts.length > 1) {
         return (
           <div key={idx} className="chat-block">
-            <div className="chat-title">{parts[0].trim()}</div>
+            <div className="chat-title">PRODUCTOS DISPONIBLES EN {parts[0].trim()}</div>
             <div className="chat-content">
               {parts.slice(1).join(':').trim()}
             </div>
