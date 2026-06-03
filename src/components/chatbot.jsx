@@ -31,7 +31,7 @@ export default function Chatbot() {
     setLoading(true);
 
     try {
-      const res = await fetch('https://backchat-production-4b60.up.railway.app/api/chat', {
+      const res = await fetch('https://backchat-production-bba9.up.railway.app/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question: input })
